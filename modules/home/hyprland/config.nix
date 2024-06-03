@@ -125,9 +125,6 @@
       };
 
       bind = [
-        # show keybinds list
-        "$mainMod, F1, exec, show-keybinds"
-
         # keybindings
         "$mainMod, Return, exec, kitty"
         "ALT, Return, exec, kitty --title float_kitty"

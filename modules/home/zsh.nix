@@ -22,8 +22,6 @@
       tt = "gtrash put";
       cat = "bat";
       nano = "micro";
-      code = "codium";
-      py = "python";
       icat = "kitten icat";
       dsize = "du -hs";
       findw = "grep -rl";
@@ -33,12 +31,11 @@
       tree = "eza --icons --tree --group-directories-first";
 
       # Nixos
-      cdnix = "cd ~/nixos-config && codium ~/nixos-config";
-      ns = "nix-shell --run zsh";
+      cdnix = "cd ~/Development/dotfiles && nvim ~/Development/dotfiles";
       nix-shell = "nix-shell --run zsh";
-      nix-switch = "sudo nixos-rebuild switch --flake ~/nixos-config#${host}";
-      nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#${host}";
-      nix-flake-update = "sudo nix flake update ~/nixos-config#";
+      nix-switch = "sudo nixos-rebuild switch --flake ~/Development/dotfiles#${host}";
+      nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/Development/dotfiles#${host}";
+      nix-flake-update = "sudo nix flake update ~/Development/dotfiles#";
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage && nix-collect-garbage -d";
 
       # Git
