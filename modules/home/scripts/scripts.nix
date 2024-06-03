@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  wall-change = pkgs.writeShellScriptBin "wall-change" (builtins.readFile ./scripts/wall-change.sh);
+  wallpaper-change = pkgs.writeShellScriptBin "wallpaper-change" (builtins.readFile ./scripts/wallpaper-change.sh);
   wallpaper-picker = pkgs.writeShellScriptBin "wallpaper-picker" (builtins.readFile ./scripts/wallpaper-picker.sh);
   
   runbg = pkgs.writeShellScriptBin "runbg" (builtins.readFile ./scripts/runbg.sh);
@@ -23,7 +23,7 @@
   ascii = pkgs.writeScriptBin "ascii" (builtins.readFile ./scripts/ascii.sh);
 in {
   home.packages = with pkgs; [
-    wall-change
+    wallpaper-change
     wallpaper-picker
     
     runbg
