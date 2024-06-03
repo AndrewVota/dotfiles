@@ -3,18 +3,15 @@
   services.xserver = {
     enable = true;
     xkb.layout = "us";
+  };
 
-    displayManager.autoLogin = {
+  services.libinput.enable = true;
+  services.displayManager.autoLogin = {
       enable = true;
       user = "${username}";
     };
-    libinput = {
-      enable = true;
-      # mouse = {
-      #   accelProfile = "flat";
-      # };
-    };
-  };
+
+
   # To prevent getting stuck at shutdown
   systemd.extraConfig = "DefaultTimeoutStopSec=10s";
 }

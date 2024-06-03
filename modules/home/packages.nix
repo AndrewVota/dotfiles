@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
+    google-chrome
     bitwise                           # cli tool for bit / hex manipulation
     eza                               # ls replacement
     entr                              # perform action when file change
