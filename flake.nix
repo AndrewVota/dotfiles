@@ -3,14 +3,9 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    # nur.url = "github:nix-community/NUR";
-  
     hypr-contrib.url = "github:hyprwm/contrib";
     hyprpicker.url = "github:hyprwm/hyprpicker";
-  
     alejandra.url = "github:kamadorueda/alejandra/3.0.0";
-  
-    # nix-gaming.url = "github:fufexan/nix-gaming";
   
     hyprland = {
       url = "github:hyprwm/Hyprland";
@@ -57,7 +52,7 @@
         modules = [ (import ./hosts/laptop) ];
         specialArgs = { host="laptop"; inherit self inputs username ; };
       };
-       vm = nixpkgs.lib.nixosSystem {
+      vm = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ (import ./hosts/vm) ];
         specialArgs = { host="vm"; inherit self inputs username ; };

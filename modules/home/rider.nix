@@ -1,6 +1,5 @@
 { pkgs, lib, inputs, ... }: with lib; 
 let
-
   extra-path = with pkgs; [
     dotnetCorePackages.sdk_7_0
     dotnetPackages.Nuget
