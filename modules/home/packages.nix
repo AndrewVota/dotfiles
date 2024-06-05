@@ -35,6 +35,8 @@
     luajit
     lua-language-server
     stylua
+    go
+    gopls
 
 
 
