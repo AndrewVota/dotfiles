@@ -28,6 +28,10 @@
       ll = "eza --icons  -a --group-directories-first -1 --no-user --long";
       tree = "eza --icons --tree --group-directories-first";
 
+      v = "nvim";
+      vi = "nvim";
+      vim = "nvim";
+
       # Nixos
       cdnix = "cd ~/Development/dotfiles && nvim ~/Development/dotfiles";
       nix-shell = "nix-shell --run zsh";

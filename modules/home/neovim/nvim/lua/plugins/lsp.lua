@@ -293,7 +293,7 @@ return {
 					-- { name = "astro" },
 					-- { name = "svelte" },
 					-- { name = "css-lsp"
-                    -- },
+					-- },
 				},
 			})
 		end,
