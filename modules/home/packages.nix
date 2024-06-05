@@ -52,6 +52,7 @@
     wget
     xdg-utils
     xxd
+    obsidian
     inputs.alejandra.defaultPackage.${system}
   ]);
 }
