@@ -20,9 +20,12 @@
     gnome.zenity
     winetricks
 
-    # C / C++
+    # Languages
     gcc
     gnumake
+    luajit
+    lua-language-server
+    stylua
 
     # Python
     python3

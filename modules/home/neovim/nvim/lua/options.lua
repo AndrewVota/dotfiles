@@ -1,3 +1,6 @@
+-- Set Neovim PATH for executables
+vim.env.PATH = "/etc/profiles/per-user/andrew/bin:" .. vim.env.PATH
+
 -- Set <SPACE> as the leader key
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "

@@ -190,35 +190,35 @@ return {
 			--    :Mason
 			--
 			--  You can press `g?` for help in this menu
-			require("mason").setup()
+			-- require("mason").setup()
 
 			-- You can add other tools here that you want Mason to install
 			-- for you, so that they are available from within Neovim.
-			local ensure_installed = vim.tbl_keys(servers or {})
-			vim.list_extend(ensure_installed, {
-				"stylua", -- Used to format lua code
-				"gopls",
-				-- "astro-language-server",
-				-- "svelte-language-server",
-				-- "prettier",
-				-- "prettierd",
-				-- "tailwindcss-language-server",
-				-- "css-lsp",
-			})
-			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
-
-			require("mason-lspconfig").setup({
-				handlers = {
-					function(server_name)
-						local server = servers[server_name] or {}
-						-- This handles overriding only values explicitly passed
-						-- by the server configuration above. Useful when disabling
-						-- certain features of an LSP (for example, turning off formatting for tsserver)
-						server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
-						require("lspconfig")[server_name].setup(server)
-					end,
-				},
-			})
+			-- local ensure_installed = vim.tbl_keys(servers or {})
+			-- vim.list_extend(ensure_installed, {
+			-- 	"stylua", -- Used to format lua code
+			-- 	"gopls",
+			-- 	-- "astro-language-server",
+			-- 	-- "svelte-language-server",
+			-- 	-- "prettier",
+			-- 	-- "prettierd",
+			-- 	-- "tailwindcss-language-server",
+			-- 	-- "css-lsp",
+			-- })
+			-- require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
+			--
+			-- require("mason-lspconfig").setup({
+			-- 	handlers = {
+			-- 		function(server_name)
+			-- 			local server = servers[server_name] or {}
+			-- 			-- This handles overriding only values explicitly passed
+			-- 			-- by the server configuration above. Useful when disabling
+			-- 			-- certain features of an LSP (for example, turning off formatting for tsserver)
+			-- 			server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
+			-- 			require("lspconfig")[server_name].setup(server)
+			-- 		end,
+			-- 	},
+			-- })
 		end,
 	},
 	{ -- Autoformat
@@ -355,23 +355,23 @@ return {
 
 			---@diagnostic disable-next-line: missing-fields
 			require("nvim-treesitter.configs").setup({
-				ensure_installed = {
-					"bash",
-					"lua",
-					"vim",
-					"vimdoc",
-					"c",
-					"go",
-					-- "html",
-					-- "css",
-					-- "javascript",
-					-- "json",
-					-- "typescript",
-					-- "svelte",
-					-- "astro",
-				},
+				-- ensure_installed = {
+				-- 	"bash",
+				-- 	"lua",
+				-- 	"vim",
+				-- 	"vimdoc",
+				-- 	"c",
+				-- 	"go",
+				-- 	-- "html",
+				-- 	-- "css",
+				-- 	-- "javascript",
+				-- 	-- "json",
+				-- 	-- "typescript",
+				-- 	-- "svelte",
+				-- 	-- "astro",
+				-- },
 				-- Autoinstall languages that are not installed
-				auto_install = true,
+				auto_install = false,
 				highlight = { enable = true },
 				indent = { enable = true },
 			})
