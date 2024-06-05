@@ -1,24 +1,33 @@
 { inputs, pkgs, ... }: 
 {
   home.packages = (with pkgs; [
+    # Programs
     google-chrome
+    cinnamon.nemo-with-extensions     # file manager
+    lazygit                           # git tui
+    nitch                             # systhem fetch util
+    toipe                             # typing test in the terminal
+    obsidian
+    yazi                              # terminal file manager
+
+    # Utilities
     eza                               # ls replacement
     entr                              # perform action when file change
     fd                                # find replacement
     file                              # Show file information 
     fzf                               # fuzzy finder
-    gtt                               # google translate TUI
-    gtrash                            # rm replacement, put deleted files in system trash
-    jdk17                             # java
-    lazygit
-    cinnamon.nemo-with-extensions     # file manager
-    nitch                             # systhem fetch util
-    prismlauncher                     # minecraft launcher
     ripgrep                           # grep replacement
-    toipe                             # typing test in the terminal
-    yazi                              # terminal file manager
-    gnome.zenity
-    winetricks
+	man-pages					      # extra man pages
+    openssl
+    pamixer                           # pulseaudio command line mixer
+    pavucontrol                       # pulseaudio volume control (GUI)
+    playerctl                         # controller for media players
+    wl-clipboard                      # clipboard utils for wayland (wl-copy, wl-paste)
+    cliphist                          # clipboard manager
+    unzip
+    wget
+    xdg-utils
+    inputs.alejandra.defaultPackage.${system}
 
     # Languages
     gcc
@@ -27,32 +36,27 @@
     lua-language-server
     stylua
 
-    # Python
-    python3
 
-    bleachbit                         # cache cleaner
-    cmatrix
-    gparted                           # partition manager
-    ffmpeg
-    imv                               # image viewer
-    killall
-    libnotify
-	man-pages					      # extra man pages
-    mpv                               # video player
-    ncdu                              # disk space
-    openssl
-    pamixer                           # pulseaudio command line mixer
-    pavucontrol                       # pulseaudio volume control (GUI)
-    playerctl                         # controller for media players
-    wl-clipboard                      # clipboard utils for wayland (wl-copy, wl-paste)
-    cliphist                          # clipboard manager
-    poweralertd
-    qalculate-gtk                     # calculator
-    unzip
-    wget
-    xdg-utils
-    xxd
-    obsidian
-    inputs.alejandra.defaultPackage.${system}
+
+    # == OLD ==
+    # gtt                               # google translate TUI
+    # gtrash                            # rm replacement, put deleted files in system trash
+    # jdk17                             # java
+    # prismlauncher                     # minecraft launcher
+    # python3
+    # gnome.zenity
+    # winetricks
+    # bleachbit                         # cache cleaner
+    # cmatrix
+    # gparted                           # partition manager
+    # ffmpeg
+    # imv                               # image viewer
+    # killall
+    # libnotify
+    # mpv                               # video player
+    # ncdu                              # disk space
+    # poweralertd
+    # qalculate-gtk                     # calculator
+    # xxd
   ]);
 }
