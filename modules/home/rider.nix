@@ -1,7 +1,7 @@
 { pkgs, lib, inputs, ... }: with lib; 
 let
   extra-path = with pkgs; [
-    dotnetCorePackages.sdk_7_0
+    dotnetCorePackages.sdk_8_0
     dotnetPackages.Nuget
     mono
     msbuild
@@ -39,7 +39,7 @@ in
 {
   home.packages = with pkgs; [
     _rider
-    dotnet-sdk_7
+    dotnet-sdk_8
   ];
 
   # Unity Rider plugin looks here for a .desktop file,
