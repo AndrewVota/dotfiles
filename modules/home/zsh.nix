@@ -19,7 +19,7 @@
       cd = "z";
       tt = "gtrash put";
       cat = "bat";
-      nano = "micro";
+      # nano = "micro";
       icat = "kitten icat";
       dsize = "du -hs";
       findw = "grep -rl";
