@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     hypr-contrib.url = "github:hyprwm/contrib";
     hyprpicker.url = "github:hyprwm/hyprpicker";
-    alejandra.url = "github:kamadorueda/alejandra/3.0.0";
+    # alejandra.url = "github:kamadorueda/alejandra/3.0.0";
   
     hyprland = {
       url = "github:hyprwm/Hyprland";
