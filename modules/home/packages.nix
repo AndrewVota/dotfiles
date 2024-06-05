@@ -42,7 +42,7 @@
     ncdu                              # disk space
     openssl
     pamixer                           # pulseaudio command line mixer
-    pavucontrol                       # pulseaudio volume controle (GUI)
+    pavucontrol                       # pulseaudio volume control (GUI)
     playerctl                         # controller for media players
     wl-clipboard                      # clipboard utils for wayland (wl-copy, wl-paste)
     cliphist                          # clipboard manager
